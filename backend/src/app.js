@@ -23,7 +23,7 @@ app.use("/api/v1/users", userRoutes);
 
 const start = async () => {
     app.set("mongo_user")
-    const connectionDb = await mongoose.connect("mongodb://127.0.0.1:27017/zoomproject")
+    const connectionDb = await mongoose.connect("mongodb+srv://krishnajoshi4698:sumit9987@cluster0.awnr89y.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
     console.log("connected to mongodb")
     server.listen(app.get("port"), () => {
